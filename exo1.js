@@ -34,6 +34,7 @@ while (feux > 0) {
     } 
     
     if (Personnage1.mentalHealth == 0) {
+        console.log("EXPLOSION")
         break
     }
 

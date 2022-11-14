@@ -18,6 +18,8 @@ let Personnage1 = new Personnage("Celian", 10)
 
 feux = 30
 
+taxi = 0
+
 while (feux > 0) {
     
     feux -= 1
@@ -28,7 +30,8 @@ while (feux > 0) {
 
     if (song == music[0]) {
         Personnage1.mentalHealth -= 1
-        console.log(Personnage1.name + " a " + Personnage1.mentalHealth + " de santé mentale.")
+        taxi += 1
+        console.log(Personnage1.name + " a " + Personnage1.mentalHealth + " de santé mentale et a changé " + taxi + " fois de taxi.")
     } else {
         console.log(Personnage1.name + " a " + Personnage1.mentalHealth + " de santé mentale.")
     } 
